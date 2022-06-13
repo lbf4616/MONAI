@@ -142,7 +142,8 @@ class LoadImaged(MapTransform):
                 meta_key = meta_key or f"{key}_{meta_key_postfix}"
                 if meta_key in d and not self.overwriting:
                     raise KeyError(f"Metadata with key {meta_key} already exists and overwriting=False.")
-                d[meta_key] = data[1]
+                # Bofan
+                # d[meta_key] = data[1]
         return d
 
 
